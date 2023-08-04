@@ -1,0 +1,504 @@
+
+section{
+    width: 100% ;
+    background-color:rgb(26, 29, 29);
+}
+.nav .parent {
+    width: 100%;
+    background-color:rgb(26, 29, 29);
+    display: flex;
+    justify-content: space-around;
+}
+.nav .parent .right{
+    width: 50%;
+    margin-right: 250px;
+}
+.nav .parent .right ul {
+    display: flex;
+    justify-content:space-between;
+    margin:25px 0px ;
+    
+}
+.nav .parent .right ul .button button {
+    width: 130px ;
+    height: 50px;
+    font-size: large;
+    background-color: rgb(26, 29, 29);
+    border: white 0.5px solid;
+    border-radius: 8px;
+}
+.nav .parent .right ul .button button:hover{
+    background-color: red;
+    transition: 1s;
+}
+
+.nav .parent .right ul .button button a{
+    color: white;
+}
+
+.nav .parent .right ul .tele a{
+    font-size: 40px;
+    color: white;
+}
+.nav .parent .right ul li .t {
+    color: red;
+}
+.nav .parent .right ul li .c{
+    color: blue;
+}
+.nav .parent .left{
+    width: 50%;
+}
+.nav .parent .left ul li{
+    float: right;
+    margin: 40px 25px;
+}
+.nav .parent .left ul li a{
+    color: white;
+    font-size: 20px;
+}
+.nav .parent .left ul li a:hover{
+    color: red;
+    transition: 1s;
+}
+.nav .parent li {
+    list-style: none;
+}
+.nav .parent li a{
+    text-decoration: none;
+    color: black;
+}
+section .container{
+    width: 90%;
+    margin: auto;
+}
+section .container .home{
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+section .container .home .h-right{
+    width: 50%;
+    text-align:right;
+    margin-top: 70px;
+}
+section .container .home .h-right h1{
+    font-size: 70px;
+    color: white;
+    margin-top: 35px;
+}
+section .container .home .h-right p{
+    font-size: 26px;
+    color: white;
+    margin-top: 35px; 
+    word-spacing: 2px;
+
+
+}
+section .container .home .h-right button{
+    width: 100px ;
+    height: 50px;
+    font-size: large; 
+    margin-top: 35px;   
+    border: white 0.5px solid;
+    border-radius: 8px;
+    background-color: red;
+    box-shadow: 0 0 20px blue ;
+}
+section .container .home .h-right button:hover{
+    background-color: blue;
+    box-shadow: 0 0 20px red ;
+    transition: 0.75s;
+    cursor: pointer;
+}
+section .container .home .h-right button a{
+    color: white;
+    text-decoration: none;
+}
+section .container .home .h-left{
+    width: 50%;
+
+}
+section .container .home .h-left img{
+    text-align: right;
+    width: 90%;
+    margin-top: 75px;
+}
+section .container .home .h-left img:hover{
+    margin-top: 150px ;
+}
+
+section .container .head{
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+}
+section .container .head h1{
+    font-size: 25px;
+    margin-top: 35px;
+}
+section .container .head p{
+    font-size: 17.5px;
+    margin-top: 25px;
+}
+section .container .head .bartition{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 35px;
+
+}
+section .container .head .bartition button{
+    width: 23%;
+    height: 90px;
+    margin:10px;
+    background-color:rgb(59, 58, 58);
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+section .container .head .bartition button a{
+    text-decoration: none;
+    color: white;
+}
+section .container  .head .bartition button:hover a{
+color: red;
+transition: 0.5s;
+}
+
+section .container .head h1{
+    font-size: 25px;
+}
+section .container  .head p{
+    font-size: 17.5px;
+    margin-top: 20px;
+}
+section .container .head .h1{
+    font-size: 25px;
+    margin-top: 150px;
+}
+section .container .sign-in{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+section .container .sign-in .form{
+    width:55%;
+    background-color:rgb(59, 58, 58);
+    border-top: solid red 7px ;
+    border-bottom: solid red 7px ;
+}
+section .container .sign-in .addres{
+    width:35%;
+    background-color:rgb(59, 58, 58);
+    border-top: solid red 7px ;
+    border-bottom: solid red 7px ;
+    padding-left: 50px;
+}
+section .container .sign-in .form .container2{
+width:90%;
+}
+section .container .sign-in .form .container2 .p{
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    margin-left:12.5%;
+}
+section .container .sign-in .form .container2 .p .email1{
+    width: 48%;
+
+}
+section .container .sign-in .form .container2 .p .name1{
+    width: 48%;
+}
+section .container .sign-in .form .container2 .p label{
+    font-size: larger;
+    color: white;
+}
+section .container .sign-in .form .container2 .p input{
+    width:100%;
+    height: 30px;
+    background-color: rgba(0 ,0 ,0, .5) ;
+}
+section .container .sign-in .form .container2 .b {
+    width: 85%;
+    margin-top: 50px;
+    text-align: right;
+    margin-left: 12.5%;
+}
+section .container .sign-in .form .container2 .b label{
+    width: 70%;
+    font-size: larger;
+    color: white;
+}
+section .container .sign-in .form .container2 .b input{
+    width:100%;
+    height: 30px;
+    background-color: rgba(0 ,0 ,0, .5) ;
+}
+section .container .sign-in .form .container2 .t{
+    width: 85%;
+    margin-top: 50px;
+    text-align: right;
+    margin-left: 12.5%;
+}
+section .container .sign-in .form .container2 .t label{
+    width: 70%;
+    font-size: larger;
+    color: white;
+}
+section .container .sign-in .form .container2 .t textarea{
+    width:100%;
+    background-color: rgb(27, 26, 26) ;
+    color: white;
+    text-align:right;
+}
+section .container .sign-in .form .container2 button{
+    margin-top:50px;
+    margin-left:50%;
+    width: 75px;
+    height: 70px;
+    border-radius: 7.5px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+section .container .sign-in .form .container2 button:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
+section .container .sign-in .addres .h5 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ section .container .sign-in .addres .h5 .lett{
+    text-align: right;
+    margin-right:15px ;
+    color: white;
+}
+ section .container .sign-in .addres .h5 .lett h1 {
+    margin-top: 35px;
+}
+section .container .sign-in .addres .h5 .lett p{
+    margin-top: 5px;
+}
+section .container .sign-in .addres .logo button{
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin-top :20px ;
+    color: red;
+    background-color: rgb(26, 24, 24) ;
+    cursor: pointer;
+}  
+section .container .sign-in .addres .logo button i{
+    font-size: 25px;
+}
+section .container .sign-in .addres .logo button:hover{
+    color:rgb(26, 24, 24) ;
+    background-color: red;
+}
+section .container .sign-in .addres iframe{
+    width:95%;
+    height: 350px;
+    margin-top:30px;
+    margin-right: 100px;
+}
+section .container .last{
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color:rgb(59, 58, 58);
+    margin-top:50px ;
+    border-left:  6px solid red;
+    border-right:  6px solid red;
+}
+section .container .last h1{
+    margin-top:20px;
+    font-size: 35px;
+}
+section .container .last hr{
+    margin-top: 25px;
+}
+section .container .last .p9{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size:16px ;
+    font-weight: lighter;
+}
+section .container .last .p9 a{
+    text-decoration: none;
+    color: red;
+}
+section .container .last .p9 a:hover{
+    color: rgb(0, 195, 255);
+}
+
+@media (max-width:960px){
+    .nav .parent .right ul {
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    .nav .parent .right ul .button button {
+        width: 90px ;
+        height: 30px;
+        font-size:smaller;
+    }
+    .nav .parent .right ul .tele a{
+        font-size: 20px;
+        color: white;
+    }
+    .nav .parent .left ul li{
+        float: right;
+        margin: 30px 10px;
+    }
+    .nav .parent .left ul li a{
+        color: white;
+        font-size: 10px;
+    }
+    section .container .home .h-right{
+        width: 80%;
+    }
+    section .container .home{
+        width: 100%;  
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+    section .container .home .h-left{
+        width: 80%;
+    }
+    section .container .home .h-right button{
+        width: 70px ;
+        height: 30px;
+        font-size: small; 
+}
+section .container .last{
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top:25px ;
+    border-left:  4px solid red;
+    border-right: 4px solid red;
+}
+section .container .last h1{
+    margin-top:10px;
+    font-size: 25px;
+}
+section .container .last hr{
+    margin-top: 20px;
+}
+section .container .last .p9{
+    margin-top: 15px;
+    display: flex;
+    font-size:10px ;
+}
+}
+
+@media (max-width:740px){
+    .nav .parent .right ul .button button {
+        width: 55px ;
+        height: 20px;
+        font-size:10px;
+    }
+    .nav .parent .right ul .tele a{
+        font-size: 15px;
+    }
+    .nav .parent .left{
+        width: 50%;
+    }
+    .nav .parent .left ul li{
+        float: right;
+        margin: 40px 5px;
+    }
+        section .container .head .bartition button{
+            width: 40%;
+            height: 90px;
+          margin-top:15px;
+    }
+    section .container .sign-in .form{
+        width: 75%;
+        padding-bottom: 50px;
+    }
+    section .container .sign-in .addres{
+        width:50%;
+        margin-top: 50px;
+    }
+    section .container .last{
+        text-align: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-top:20px ;
+        border-left:  2.5px solid red;
+        border-right: 2.5px solid red;
+    }
+    section .container .last h1{
+        margin-top:13px;
+        font-size: 15px;
+    }
+    section .container .last hr{
+        margin-top: 15px;
+    }
+    section .container .last .p9{
+        margin-top: 7px;
+        font-size:7px ;
+    }
+}
+@media (max-width:470px){
+    .nav .parent{
+        display: none;
+    }
+        section .container .head .bartition button{
+            width: 70%;
+    }
+    section .container .sign-in .form{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+    section .container .sign-in .addres{
+        width:90%;
+        margin-top: 50px;
+    }
+    section .container .last{
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-top:10px ;
+        border-left:  1px solid red;
+        border-right: 1px solid red;
+    }
+    section .container .last h1{
+        margin-top:8px;
+        font-size: 9px;
+    }
+    section .container .last hr{
+        margin-top: 9px;
+    }
+    section .container .last .p9{
+        margin-top: 4px;
+        font-size:4px ;
+    }
+
+}
