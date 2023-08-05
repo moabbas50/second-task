@@ -476,8 +476,14 @@ section .container .last .p9{
     body {
         overflow-x: hidden;
      }
-    .nav .parent .right ul {
+    .nav .parent .right ul .button {
         display: none;
+    }
+    .nav .parent .right ul .tele{
+        float: right;
+    }
+    .nav .parent .right {
+        margin-right:10px ;
     }
     .nav .parent .left ul{
         display: none;
