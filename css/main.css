@@ -1,4 +1,6 @@
-
+body {
+    overflow-x: hidden;
+ }
 section{
     width: 100% ;
     background-color:rgb(26, 29, 29);
@@ -349,6 +351,9 @@ section .container .last .p9 a:hover{
 }
 
 @media (max-width:960px){
+     body {
+        overflow-x: hidden;
+     }
     .nav .parent .right ul {
         display: flex;
         justify-content:space-around;
@@ -414,6 +419,9 @@ section .container .last .p9{
 }
 
 @media (max-width:740px){
+    body {
+        overflow-x: hidden;
+     }
     .nav .parent .right ul .button button {
         width: 55px ;
         height: 20px;
@@ -465,7 +473,13 @@ section .container .last .p9{
     }
 }
 @media (max-width:470px){
-    .nav .parent{
+    body {
+        overflow-x: hidden;
+     }
+    .nav .parent .right ul {
+        display: none;
+    }
+    .nav .parent .left ul{
         display: none;
     }
         section .container .head .bartition button{
