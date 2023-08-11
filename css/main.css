@@ -1,600 +1,1182 @@
-
 section{
-    width: 100% ;
-    background-color:rgb(26, 29, 29);
+    position: relative;
+    background-color: rgb(32, 31, 31) ;
 }
-section .nav{
-    width:90%;
-    margin: auto;
-    padding-top: 20px;
-}
-.nav .parent {
+section .section-1{
     width: 100%;
-    display: flex;
+    height: 100vh;
+    background-image:url(../img/bbbbbb.jpg);
+    background-size:cover ;
+    background-attachment: fixed;
+    
 }
-.nav .parent .right{
-    width: 45%;
+section .section-1 .layout{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
 }
-.nav .parent .right div{
-    width: 140px; ;
+section .section-1 header {
+    width:100% ;
+    background-image: linear-gradient(to right, rgb(32, 31, 31) 60% , rgb(141, 30, 192));
+    padding-bottom: 15px;
+    position: absolute;
+    position: fixed;
+    z-index:  26262626;
+}
+section .section-1 header .nav{
+    width: 90%;
     margin: auto;
-    margin-top: 15px ;
-} 
-.nav .parent .right div a{
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
-.nav .parent .right  div .t {
-    color: red;
+section .section-1 header .nav .nav-lt{
+    margin-top: 25px;
 }
-.nav .parent .right div .c{
-    color: blue;
+section .section-1 header .nav .nav-rt{
+    margin-top: 30px;
 }
-.nav .parent .left{
-    width: 55%;
-    float: right;
+section .section-1 header .nav .nav-rt{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
 }
-.nav .parent li a{
-    text-decoration: none;
+section .section-1 header .nav .nav-rt .title{
+    width:70% ;
 }
-.nav .parent .left .togelar{
-    display: none;
-}
-.nav .parent .left .togelar i{
-    font-size:25px;
-    color: white;
-}
-.nav .parent .left .togelar i:hover{
-    color: red;
-}
-.nav .parent .left ul li{
-    float: right;
-    margin:25px 15px;
-    list-style: none;
-}
-.nav .parent .left ul .butt a  {
-    padding: 13px 22px;
-    font-size: 18px;
-    background-color: rgb(26, 29, 29);
-    border: white 0.5px solid;
-    border-radius: 10px;
-}
-.nav .parent .left ul .butt :hover{
-    background-color: red;
-    transition: 1s;
-    color: white;
-}
-.nav .parent .left  button a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav .parent .left ul li a{
+section .section-1 header .nav .nav-rt .bar{
     color: white;
     font-size: 20px;
+    display: none;
 }
-.nav .parent .left ul li a:hover{
-    color: red;
-    transition: 1s;
+section .section-1 header .nav .nav-rt .title ul li{
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    margin: 0px 20px ;
 }
-section .container{
+section .section-1 header .nav .nav-rt .title ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+section .section-1 header .nav .nav-rt .title ul li a:hover{
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    text-shadow: 0 0 7px white;
+    transition:all 0.5s;
+}
+section .section-1 header .nav .nav-rt .logo{
+    width:40%;
+}
+section .section-1 header .nav .nav-rt .logo ul li {
+    list-style: none;
+    font-size: 20px;
+    float: left;
+    margin: 0px 13px ;
+    transition: all 1s;
+}
+section .section-1 header .nav .nav-rt .logo ul li a{
+    text-decoration: none;
+    color: white;
+}
+section .section-1 header .nav .nav-rt .logo ul li a:hover i{
+    font-size: 35px;
+  transform:rotate(360deg); 
+  transition:1s ;
+  color: rgba(255,255,255,0.5);
+}
+section .section-1 header .nav .nav-lt{
+    width: 50%;
+}
+section .section-1 header .nav .nav-lt img{
+    width:30% ;
+}
+
+section .section-1 .layout .welcom{
+width:90%;
+margin: auto;
+text-align: center;
+}
+section .section-1 .layout .welcom   h1{
+    font-size:50px ;
+    font-weight: bolder;
+    font-family:Poppins,sans-serif;
+    text-shadow: 0 0 20px rgb(130, 68, 230);
+    color: white;
+    margin-top: 250px;
+}
+section .section-1 .layout .welcom .a{
+    margin-top: 50px;
+}
+section .section-1 .layout .welcom .a a{
+    padding: 15px 30px ;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    border: solid white 3px;
+}
+section .section-1 .layout .welcom .a a:hover{
+    background-color: rgb(141, 30, 192) ;
+    border: 2px solid black;
+}
+section .Home{
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 10%;
+}
+section .Home .about {
     width: 90%;
+    display: flex;
     margin: auto;
 }
-section .container .home{
-    width: 100%;  
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    justify-content: space-around;
-}
-section .container .home .h-right{
+section .Home .about .logo-rt{
     width: 50%;
-    text-align:right;
-    margin-top: 70px;
+    margin-top: 200px;
 }
-section .container .home .h-right h1{
-    font-size: 70px;
-    color: white;
-    margin-top: 35px;
+section .Home .about .logo-rt img {
+    width: 500px;
 }
-section .container .home .h-right p{
-    font-size: 26px;
-    color: white;
-    margin-top: 35px; 
-    word-spacing: 2px;
-
-
-}
-section .container .home .h-right button{
-    width: 100px ;
-    height: 50px;
-    font-size: large; 
-    margin-top: 35px;   
-    border: white 0.5px solid;
-    border-radius: 8px;
-    background-color: red;
-    box-shadow: 0 0 20px blue ;
-}
-section .container .home .h-right button:hover{
-    background-color: blue;
-    box-shadow: 0 0 20px red ;
-    transition: 0.75s;
-    cursor: pointer;
-}
-section .container .home .h-right button a{
-    color: white;
-    text-decoration: none;
-}
-section .container .home .h-left{
+section .Home .about .about-lt {
     width: 50%;
-
-}
-section .container .home .h-left img{
-    text-align: right;
-    width: 90%;
     margin-top: 75px;
-}
-section .container .home .h-left img:hover{
-    margin-top: 150px ;
-}
-
-section .container .head{
-    text-align: center;
-    margin-top: 10%;
     color: white;
 }
-section .container .head h1{
-    font-size: 25px;
-    margin-top: 35px;
-}
-section .container .head p{
-    font-size: 17.5px;
-    margin-top: 25px;
-}
-section .container .head .bartition{
-    width: 100%;
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    margin-top: 35px;
 
-}
-section .container .head .bartition button{
-    width: 23%;
-    height: 90px;
-    margin:10px;
-    background-color:rgb(59, 58, 58);
+section .Home .about .about-lt h2 {
     font-size: 25px;
-    cursor: pointer;
-    font-weight: bold;
+    position: relative;
 }
-section .container .head .bartition button a{
-    text-decoration: none;
-    color: white;
+section .Home .about .about-lt h2::after{
+    content: "";
+    width:30%;
+    height: 2px;
+    background-color: white ;
+    position: absolute;
+    top: 50%;
+    left:15%;
 }
-section .container  .head .bartition button:hover a{
-color: red;
-transition: 0.5s;
+section .Home .about .about-lt h1{
+     margin-top: 7.5px;
+     font-size: 50px;
 }
-
-section .container .head h1{
-    font-size: 25px;
-}
-section .container  .head p{
-    font-size: 17.5px;
-    margin-top: 20px;
-}
-section .container .head .h1{
-    font-size: 25px;
-    margin-top: 150px;
-}
-section .container .sign-in{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 25px;
-}
-
-section .container .sign-in .form{
-    width:55%;
-    background-color:rgb(59, 58, 58);
-    border-top: solid red 7px ;
-    border-bottom: solid red 7px ;
-}
-section .container .sign-in .addres{
-    width:35%;
-    background-color:rgb(59, 58, 58);
-    border-top: solid red 7px ;
-    border-bottom: solid red 7px ;
-    padding-left: 50px;
-}
-section .container .sign-in .form .container2{
-width:90%;
-}
-section .container .sign-in .form .container2 .p{
-    width: 85%;
+section .Home .about .about-lt p{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-    margin-left:12.5%;
-}
-section .container .sign-in .form .container2 .p .email1{
-    width: 48%;
-
-}
-section .container .sign-in .form .container2 .p .name1{
-    width: 48%;
-}
-section .container .sign-in .form .container2 .p label{
-    font-size: larger;
-    color: white;
-}
-section .container .sign-in .form .container2 .p input{
-    width:100%;
-    height: 30px;
-    background-color: rgba(0 ,0 ,0, .5) ;
-}
-section .container .sign-in .form .container2 .b {
-    width: 85%;
-    margin-top: 50px;
-    text-align: right;
-    margin-left: 12.5%;
-}
-section .container .sign-in .form .container2 .b label{
-    width: 70%;
-    font-size: larger;
-    color: white;
-}
-section .container .sign-in .form .container2 .b input{
-    width:100%;
-    height: 30px;
-    background-color: rgba(0 ,0 ,0, .5) ;
-}
-section .container .sign-in .form .container2 .t{
-    width: 85%;
-    margin-top: 50px;
-    text-align: right;
-    margin-left: 12.5%;
-}
-section .container .sign-in .form .container2 .t label{
-    width: 70%;
-    font-size: larger;
-    color: white;
-}
-section .container .sign-in .form .container2 .t textarea{
-    width:100%;
-    background-color: rgb(27, 26, 26) ;
-    color: white;
-    text-align:right;
-}
-section .container .sign-in .form .container2 button{
-    margin-top:50px;
-    margin-left:50%;
-    width: 75px;
-    height: 70px;
-    border-radius: 7.5px;
-    color: white;
-    background-color: red;
-    cursor: pointer;
-}
-section .container .sign-in .form .container2 button:hover{
-    background-color: blue;
-    transition: 0.5s;
-}
-section .container .sign-in .addres .h5 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
- section .container .sign-in .addres .h5 .lett{
-    text-align: right;
-    margin-right:15px ;
-    color: white;
-}
- section .container .sign-in .addres .h5 .lett h1 {
-    margin-top: 35px;
-}
-section .container .sign-in .addres .h5 .lett p{
-    margin-top: 5px;
-}
-section .container .sign-in .addres .logo button{
-    width: 60px;
-    height: 70px;
-    border-radius: 50%;
-    display: block;
-    margin-top :20px ;
-    color: red;
-    background-color: rgb(26, 24, 24) ;
-    cursor: pointer;
-}  
-section .container .sign-in .addres .logo button i{
-    font-size: 25px;
-}
-section .container .sign-in .addres .logo button:hover{
-    color:rgb(26, 24, 24) ;
-    background-color: red;
-}
-section .container .sign-in .addres iframe{
-    width:95%;
-    height: 350px;
-    margin-top:30px;
-    margin-right: 100px;
-}
-section .container .last{
-    text-align: center;
-    padding-top: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    color: white;
-    background-color:rgb(59, 58, 58);
-    margin-top:50px ;
-    border-left:  6px solid red;
-    border-right:  6px solid red;
-}
-section .container .last h1{
-    margin-top:20px;
     font-size: 35px;
 }
-section .container .last hr{
+section .Home .about .about-lt .title{
     margin-top: 25px;
 }
-section .container .last .p9{
+section .Home .about .about-lt .title label{
+    font-size: 17.5px;
+}
+section .Home .about .about-lt .title ul{
     margin-top: 20px;
+}
+section .Home .about .about-lt .title ul li {
+list-style: none;
+margin-top: 15px;
+font-size: 17.5px;
+}
+section .Home .about .about-lt .title ul li i{
+    padding-right: 5px;
+}
+section .Home .about .about-lt .learn {
+    margin-top:50px;
+} 
+section .Home .about .about-lt a{
+    padding:12px 25px;
+    border: solid 0px ;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    background-color: rgb(141, 30, 192);
+}
+section .end-bar {
+    width:80% ;
+    background-color: rgb(32, 31, 31) ;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section .end-bar .end-1{
+    color: white;
+    text-align: center;
+}
+section .end-bar .end-1 p{
+    margin-top: 5px;
+}
+section .end-bar .end-1 .mail{
+    margin-top: 25px;
+}
+section .end-bar .end-1 .mail span{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.end-bar .end-2 {
+    text-align: center;
+}
+.end-bar .end-2 h1{
+    color: white;
+}
+ 
+
+section .end-bar .end-2 .logo {
+    margin-top: 30px;
+}
+section .end-bar .end-2 .logo ul li  {
+    list-style: none;
+ 
+}
+section .end-bar .end-2 a {
+    text-decoration: none;
+    color: white;
+    font-size: ;
+    margin: 10px 3px;
+    padding-top:10px;
+    font-size: 14px;
+    float: left;
+    width:35px ;
+    height: 25px;
+    background-color: rgb(141, 30, 192);
+    border-radius: 30px;
+}
+section .end-bar .end-2 a:hover{
+    width:45px ;
+    height: 30px;
+    padding-top:13px;
+}
+section .end-bar .end-3{
+    color: white;
+}
+section .end-bar .end-3 .amit {
+    display: flex;
+    margin-top: 20px;
+}
+section .end-bar .end-3 .amit img {
+    margin-right: 5px;
+    width: 60px;
+}
+section .end-bar .end-3 .amit a {
+    text-decoration: none;
+    color: white;
+}
+section .end-bar .end-3 .amit p {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+section .Copyright {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+section .Copyright p{
+    color: white;
+    margin-left: 100px;
+}
+section .Copyright p span{
+    color: green;
+}
+/* about us */
+
+
+
+
+
+section  header {
+    width:100% ;
+    background-image: linear-gradient(to right, rgb(32, 31, 31) 60% , rgb(141, 30, 192));
+    padding-bottom: 15px;
+    position: absolute;
+    position: fixed;
+    z-index:  26262626;
+}
+section  header .nav{
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    font-size:16px ;
-    font-weight: lighter;
 }
-section .container .last .p9 a{
+section  header .nav .nav-lt{
+    margin-top: 25px;
+}
+section  header .nav .nav-rt{
+    margin-top: 30px;
+}
+section  header .nav .nav-rt{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+section  header .nav .nav-rt .title{
+    width: 50% ;
+}
+section header .nav .nav-rt .bar{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+section  header .nav .nav-rt .title ul li{
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    margin: 0px 20px ;
+}
+section  header .nav .nav-rt .title ul li a{
     text-decoration: none;
-    color: red;
+    color: whitesmoke;
 }
-section .container .last .p9 a:hover{
-    color: rgb(0, 195, 255);
+section  header .nav .nav-rt .title ul li a:hover{
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    text-shadow: 0 0 7px white;
+    transform: rotate (360deg);
+    transition:all 0.5s;
+}
+section  header .nav .nav-rt .logo{
+    width:40%;
+}
+section  header .nav .nav-rt .logo ul li {
+    list-style: none;
+    font-size: 20px;
+    float: left;
+    margin: 0px 13px ;
+    transition: all 1s;
+}
+section  header .nav .nav-rt .logo ul li a{
+    text-decoration: none;
+    color: white;
+}
+section  header .nav .nav-rt .logo ul li a:hover i{
+    font-size: 35px;
+  transform:rotate(360deg); 
+  transition:1s ;
+  color: rgba(255,255,255,0.5);
+}
+section  header .nav .nav-lt{
+    width: 50%;
+}
+section  header .nav .nav-lt img{
+    width:30% ;
+}
+section .p-k {
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    padding-top:125px ;
+    padding-bottom:40px;
+}
+section .klayout .kabout-us{
+    background-color:rgb(24, 23, 23);
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+section .klayout .kabout-us h1{
+    font-size: 40px;
+    text-shadow: 0 0 10px rgb(129, 70, 168);
+}
+section .klayout .kabout-us p{
+    font-size:17px ;
+}
+section .khome{
+    background-image: url(../img/background.jpg);
+    width: 100%;
+    background-size:cover ;
+    background-attachment: fixed;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+section .khome .kphome{
+    width: 80%;
+    margin: auto;
+    color: white; 
+}
+section .khome .kphome h5{
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 15px;
+
+}
+section .khome .kphome h5::after{
+    content: "";
+    width:10%;
+    height: 1px;
+    background-color:rgba(255,255,255,0.75) ;
+    position: absolute;
+    top: 50%;
+    left:14%;
+}
+section .khome .kphome h1{
+    margin: 10px 0px;
+    font-size: 40px;
+}
+section .khome .vision {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+section .khome .vision div{
+    width: 45%;
+}
+section .khome .vision div h1 i {
+    font-size: 75px;
+    text-shadow:  0 0 15px rgb(129, 56, 212);
+    
+}
+section .khome .vision div h2{
+    font-size:25px ;
+    text-shadow: 0 0 10px rgb(129, 70, 168);
+} 
+section .khome .vision div h2:hover{
+    color: green;
+}
+section .khome .vision div p{
+font-size: 20px;
+}
+section{
+    
+}
+section .kitme img{
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0 0 15px black;
+}
+section  .kitme{
+    width: 80%; 
+    margin: auto;
+    color: white; 
+    margin-top: 100px;
+    
+}
+section  .kitme .partition {
+    display: flex;
+    justify-content: space-between;
+}
+section  .kitme .partition .para{
+    width: 55%;
+}
+section  .kitme h1{
+    font-size:35px ;
+    text-shadow: 0 0 10px rgb(129, 70, 168);
+    margin-top: 50px;
 }
 
-@media (max-width:960px){
-    .nav .parent .right  div a{
+section  .kitme p{
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+
+
+
+/* evnts */
+
+
+section .khome .events9{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: 40px;
+    overflow: hidden;
+}
+section .khome .events9 button{
+    font-size:18px;
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom:15px ;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0px;
+    border:solid 0px ;
+}
+section .khome .events9 i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+section .khome .events9 button:hover{
+    font-size:20px;
+    font-weight: bold;
+    width:100% ;
+    padding: 20px 0px;
+    text-decoration: underline;
+    transition: 1s;
+    cursor: pointer;
+}
+section .khome .events9 .event11 .event1 {
+    display: none;
+}
+section .khome .events9 .event11 .head-e1 :focus-within + .event1 {
+    
+    display: block;
+}
+section .khome .events9 .event11 .event1 .part{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: left;
+    margin: 15px 0 ;
+}
+section .khome .events9 .event11 .event1 .part .litter{
+    width: 60%;
+}
+section .khome .events9 .event11 .event1 .part h1{
+
+    font-size:30px ;
+}
+section .khome .events9 .event11 .event1 .part p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:20px;
+}
+
+/* media */
+
+
+
+
+@media(max-width:1020px){
+  
+ 
+    section .section-1 header .nav .nav-rt{
+        width:60%;
+    }
+    section .section-1 header .nav .nav-rt .title{
+        width: 70% ;
+    }
+    section .section-1 header .nav .nav-rt .title ul li{
+        margin: 0px 15px ;
+    }
+
+    section .section-1 header .nav .nav-lt img{
+        width:38% ;
+    }
+    
+    section .section-1 .layout .welcom   h1{
+        margin-top: 100px;
+    }
+    section .section-1 .layout .welcom .a{
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+   
+    section .Home .about .logo-rt img {
+        width: 400px;
+    }
+    section .Home .about .about-lt {
+        width: 60%;
+    }
+    
+    section .Home .about .about-lt h2 {
+        font-size: 22px;
+        position: relative;
+    }
+    section .Home .about .about-lt h2::after{
+        left:18%;
+    }
+    section .Home .about .about-lt h1{
+         margin-top: 5px;
+         font-size: 40px;
+    }
+    section .Home .about .about-lt p{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+   
+    /* about us */
+    
+ 
+   
+    section  header .nav .nav-rt{
+        width:60%;
+    }
+    section  header .nav .nav-rt .title{
+        width: 70% ;
+    }
+    section  header .nav .nav-rt .title ul li{
+        margin: 0px 15px ;
+    }
+  
+    section  header .nav .nav-lt img{
+        width:38% ;
+    }
+
+    section .khome .kphome h5::after{
+        left:21%;
+    }
+    
+    section .kitme img{
+        width: 500px;
+        border-radius: 20px;
+        margin-top: 25px;
+        box-shadow: 0 0 15px black;
+    }
+    section  .kitme{
+        width: 80%; 
+        margin: auto;
+        color: white; 
+        margin-top: 100px;
+        
+    }
+    section  .kitme .partition{
+        width: 100%;
+    }
+    
+    section  .kitme .partition  img{
+        width: 400px;
+    }
+    section  .kitme p{
+        margin-top: 18px;
+        font-size:17px;
+    }
+    
+}
+
+
+
+
+
+
+@media(max-width:940px){
+  
+   
+    section .section-1 header .nav .nav-rt{
+        width: 60%;
+    }
+    section .section-1 header .nav .nav-rt .title{
+        width:80% ;
+    }
+    section .section-1 header .nav .nav-rt .title ul li{
+     font-size: 16px;
+        margin: 0px 15px ;
+    }
+    
+   
+    section .section-1 header .nav .nav-rt .logo{
+        width:45%;
+    }
+    
+    
+    section .section-1 header .nav .nav-lt{
+        width: 60%;
+    }
+    section .section-1 header .nav .nav-lt img{
+        width:40% ;
+    }
+    
+    
+    
+    
+    section .Home .about .logo-rt{
+        width:40%;
+        margin-top: 150px;
+        align-items: center;
+    }
+    section .Home .about .logo-rt img {
+        width: 350px;
+    }
+    section .Home .about .about-lt {
+        width: 50%;
+        margin-top: 75px;
+    }
+    section .Home .about .about-lt h2 {
         font-size: 20px;
     }
-    .nav .parent .left ul .butt a  {
-        padding: 10px 19px;
-        font-size: 16px;
+    section .Home .about .about-lt h2::after{
+       
+        left:18%;
     }
-    .nav .parent .left ul li{
-        float: right;
-        margin: 18px 10px;
+    section .Home .about .about-lt h1{
+         margin-top: 6px;
+         font-size: 40px;
     }
-    .nav .parent .left ul li a{
-        font-size: 10px;
+    section .Home .about .about-lt p{
+        font-size: 20px;
     }
-
-    section .container .home .h-right{
-        width: 50%;
-        margin-top: 60px;
+    section .Home .about .about-lt .title{
+        margin-top: 25px;
     }
-    section .container .home .h-right h1{
-        font-size: 55px;
-        color: white;
-        margin-top: 28px;
-    }
-    section .container .home .h-right p{
-        font-size: 22px;
-        color: white;
-        margin-top: 28px; 
-        word-spacing: 2px;
-    
-    
-    }
-    section .container .home .h-right button{
-        width: 80px ;
-        height: 35px;
-        font-size: large; 
-        margin-top: 28px;   
-    }
-    section .container .home .h-left img{
-        text-align: right;
-        width: 80%;
-        margin-top: 40px;
-    }
-    section .container .home .h-left img:hover{
-        margin-top: 60px ;
-    }
-section .container .last{
-    text-align: center;
-    padding-top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    margin-top:25px ;
-    border-left:  4px solid red;
-    border-right: 4px solid red;
-}
-section .container .last h1{
-    margin-top:10px;
-    font-size: 25px;
-}
-section .container .last hr{
-    margin-top: 20px;
-}
-section .container .last .p9{
-    margin-top: 15px;
-    display: flex;
-    font-size:10px ;
-}
-}
-
-@media (max-width:740px){
-    .nav .parent .right  div a{
-        font-size: 18px;
-    }
-    .nav .parent .left ul .butt a  {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-    .nav .parent .left ul li{
-        float: right;
-        margin: 14px 8px;
-    }
-    .nav .parent .left ul li a{
-        font-size: 8px;
-    }
-    section .container .home .h-right{
-        width: 50%;
-        margin-top: 50px;
-    }
-    section .container .home .h-right h1{
-        font-size: 40px;
-        margin-top: 20px;
-    }
-    section .container .home .h-right p{
-        font-size: 22px;
-        margin-top: 20px; 
-        word-spacing: 1px;
-    }
-    section .container .home .h-right button{
-        width: 60px ;
-        height: 25px;
-        font-size: small; 
-        margin-top: 20px;   
-    }
-    section .container .home .h-left img{
-        text-align: right;
-        width: 80%;
-        margin-top: 20px;
-    }
-    section .container .home .h-left img:hover{
-        margin-top: 40px ;
-    }
-        section .container .head .bartition button{
-            width: 40%;
-            height: 90px;
-          margin-top:15px;
-    }
-    section .container .sign-in .form{
-        width: 75%;
-        padding-bottom: 50px;
-    }
-    section .container .sign-in .addres{
-        width:50%;
-        margin-top: 50px;
-    }
-    section .container .last{
-        text-align: center;
-        padding-top: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        margin-top:20px ;
-        border-left:  2.5px solid red;
-        border-right: 2.5px solid red;
-    }
-    section .container .last h1{
-        margin-top:13px;
+    section .Home .about .about-lt .title label{
         font-size: 15px;
     }
-    section .container .last hr{
-        margin-top: 15px;
+    section .Home .about .about-lt .title ul{
+        margin-top: 17.5px;
     }
-    section .container .last .p9{
-        margin-top: 7px;
-        font-size:7px ;
+    section .Home .about .about-lt .title ul li {
+    font-size: 15.5px;
     }
-}
-@media (max-width:500px){
-    section .nav{
-        padding-top:10px;
+    
+    
+    /* about us */
+    
+    
+    
+    
+    section  header .nav .nav-rt{
+        width: 60%;
     }
-
-    .nav .parent .right{
-        width: 90%;
-        margin: auto;
+    section  header .nav .nav-rt .title{
+        width:80% ;
     }
-    .nav .parent .right div {
-        width:20%;
+    section  header .nav .nav-rt .title ul li{
+     font-size: 16px;
+        margin: 0px 15px ;
     }
-    .nav .parent .left ul{
-        display: none;
+    section  header .nav .nav-rt .logo{
+        width:45%;
+    } 
+    section  header .nav .nav-lt{
+        width: 60%;
     }
-    .nav .parent .left .togelar{
-        display:block;
-        margin-top:10px;
+    section  header .nav .nav-lt img{
+        width:40% ;
     }
-    section .container .home{
-        margin-top:20px ;
+    
+    section .khome .kphome h5{
+        font-size: 13px;
     }
-    section .container .home .h-right{
-        width:70%;
-        margin-top: 30px;
+    section .khome .kphome h5::after{
+        left:21%;
     }
-    section .container .home .h-right h1{
-        font-size: 50px;
-        margin-top: 20px;
-    }
-    section .container .home .h-right p{
-        font-size: 22px;
-        margin-top: 20px; 
-        word-spacing: 1px;
-    }
-    section .container .home .h-right button{
-        width: 40px ;
-        height: 20px;
-        font-size:small; 
-        margin-top: 20px;   
-    }
-    section .container .home .h-left {
-        width:90% ;
-    }
-    section .container .home .h-left img{
-        text-align: center;
-        width: 90%;
-        margin-top: 20px;
-    }
-    section .container .home .h-left img:hover{
-        margin-top: 40px ;
-    }
-        section .container .head .bartition button{
-            width: 70%;
-    }
-    section .container .sign-in .form{
-        width: 90%;
-        padding-bottom: 50px;
-    }
-    section .container .sign-in .addres{
-        width:90%;
+        
+    
+    section .kitme .partition img{
+        width: 350px;
         margin-top: 50px;
     }
-    section .container .sign-in .addres iframe{
-        width:90%;
-        height: 250px;
-        margin-top:20px;
-        margin-right: 30px;
+    
+    section  .kitme p{
+        margin-top: 10px;
+        font-size: 18px;
     }
-    section .container .last{
+}
+
+
+@media(max-width:740px){
+
+    section .section-1 header .nav .nav-rt{
+        width: 60%;
+    }
+    section .section-1 header .nav .nav-rt .title{
+        width:80% ;
+    }
+    section .section-1 header .nav .nav-rt .title ul li{
+     font-size: 13px;
+        margin: 0px 15px ;
+    }
+    
+   
+    section .section-1 header .nav .nav-rt .logo{
+        width:45%;
+    }
+    section .section-1 header .nav .nav-rt .logo ul li  {
+        margin: 0px 9px;
+    }
+    section .section-1 header .nav .nav-rt .logo ul li i{
+        font-size: 15px;
+    };
+    section .section-1 header .nav .nav-rt .logo ul li a:hover i{
+        font-size: 20px;
+    }      
+    section .section-1 header .nav .nav-lt{
+        width: 60%;
+    }
+    section .section-1 header .nav .nav-lt img{
+        width:200px ;
+    }
+    
+    
+       
+    section .Home .about .logo-rt{
+        width:40%;
+        margin-top: 150px;
+        align-items: center;
+    }
+    section .Home .about .logo-rt img {
+        width: 250px;
+    }
+    section .Home .about .about-lt {
+        width: 50%;
+        margin-top:60px;
+    }
+    section .Home .about .about-lt h2 {
+        font-size: 15px;
+    }
+    section .Home .about .about-lt h2::after{
+       
+        left:20%;
+    }
+    section .Home .about .about-lt h1{
+         margin-top: 3px;
+         font-size: 30px;
+    }
+    section .Home .about .about-lt p{
+        font-size: 16px;
+    }
+    section .Home .about .about-lt .title{
+        margin-top: 20px;
+    }
+    section .Home .about .about-lt .title label{
+        font-size: 12px;
+    }
+    section .Home .about .about-lt .title ul{
+        margin-top: 15.5px;
+    }
+    section .Home .about .about-lt .title ul li {
+    font-size: 12.5px;
+    }
+    section .end-bar{
+        width: 90%;
+    }
+    section .end-bar .end-1{
+        width:33% ;
+    }
+    section .end-bar .end-1 h1{
+        font-size:25px ;
+    }
+
+    section .end-bar .end-1 p{
+        font-size:14px ;
+        margin-top: 5px;
+    }
+    section .end-bar .end-1 .mail{
+        margin-top: 25px;
+    }
+    section .end-bar .end-1 .mail span{
+        font-weight: bold;
+        font-size: larger;
+    }
+    .end-bar .end-2 {
+        width: 30%;
         text-align: center;
-        padding-top: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        margin-top:10px ;
-        border-left:  1px solid red;
-        border-right: 1px solid red;
     }
-    section .container .last h1{
-        margin-top:8px;
-        font-size:14px;
+    .end-bar .end-2 h1{
+        color: white;
+        font-size:25px ;
     }
-    section .container .last hr{
-        margin-top: 9px;
+     
+    
+    section .end-bar .end-2 .logo {
+        margin-top: 30px;
     }
-    section .container .last .p9{
-        margin-top:8px;
-        font-size:12px ;
+    section .end-bar .end-2 a {
+        text-decoration: none;
+        color: white;
+        margin: 10px 3px;
+        padding-top:8px;
+        font-size: 14px;
+        float: left;
+        width:30px ;
+        height: 20px;
+        
     }
+    section .end-bar .end-2 a:hover{
+        width:35px ;
+        height: 25px;
+        padding-top:10px;
+    }
+    section .end-bar .end-3{
+        color: white;
+        width: 30%;
+    }
+    section .end-bar .end-3 .amit {
+        display: flex;
+        margin-top: 20px;
+    }
+    section .end-bar .end-3 .amit img {
+        margin-right: 5px;
+        width: 60px;
+    }
+    section .end-bar .end-3 .amit a {
+        text-decoration: none;
+        color: white;
+    }
+    section .end-bar .end-3 .amit p {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    
+    /* about us */
+    
+   
+    section  header .nav .nav-rt{
+        width: 60%;
+    }
+    section  header .nav .nav-rt .title{
+        width:80% ;
+    }
+    section  header .nav .nav-rt .title ul li{
+     font-size: 13px;
+        margin: 0px 15px ;
+    }
+    section  header .nav .nav-rt .logo{
+        width:45%;
+    }
+    section  header .nav .nav-rt .logo ul li  {
+        margin: 0px 9px;
+    }
+    section  header .nav .nav-rt .logo ul li i{
+        font-size: 15px;
+    };
+    section  header .nav .nav-rt .logo ul li a:hover i{
+        font-size: 20px;
+    }      
+    section  header .nav .nav-lt{
+        width: 60%;
+    }
+    section  header .nav .nav-lt img{
+        width:200px ;
+ 
+    }
+    
+    section .klayout .kabout-us h1{
+        font-size: 30px;
+    }
+    section .klayout .kabout-us p{
+        font-size:14px ;
+    }
+    section .khome{
+        padding-top:35px;
+        padding-bottom: 35px;
+    }
+    section .klayout .khome .kphome h5{
+        font-size: 12px;
+    
+    }
+    section .klayout .khome .kphome h5::after{
+        left:25%;
+    }
+    section .khome .kphome h1{
+        font-size: 28px;
+    }
+  
+    section .khome .vision div h1 i {
+        font-size: 50px;
+    }
+    section .khome .vision div h2{
+        font-size:20px ;
+        } 
+    section .khome .vision div h2:hover{
+        color: green;
+    }
+    section .khome .vision div p{
+    font-size: 15px;
+    }
+
+    
+    section .khome .kphome h5{
+        font-size: 13px;
+    }
+    section .khome .kphome h5::after{
+        left:21%;
+    }
+        
+    section .kitme{
+        margin-top: 20px;
+    }
+    section .kitme .partition img{
+        width: 250px;
+        margin-top: 50px;
+    }
+    section .kitme h1{
+        font-size: 30px;
+    }
+    section  .kitme p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+
+
+/* event */
+
+section .khome .events9{
+    margin-top: 65px;
+}
+section .khome .events9 button{
+    font-size:16px;
+    width: 95%;
+    margin-top: 12px;
+    margin-bottom:12px ;
+    padding: 10px 0px;
+ }
+section .khome .events9 i{
+    font-size: 18px;
+}
+section .khome .events9 .event11 .event1 {
+    display: none;
+}
+section .khome .events9 .event11 .head-e1 :focus-within + .event1 {
+    
+    display: block;
+}
+section .khome .events9 .event11 .event1 .part{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: left;
+    margin: 15px 0 ;
+}
+section .khome .events9 .event11 .event1  img{
+width:200px ;
+}
+section .khome .events9 .event11 .event1 .part .litter{
+    width: 60%;
+}
+section .khome .events9 .event11 .event1 .part h1{
+
+    font-size:23px ;
+}
+section .khome .events9 .event11 .event1 .part p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size:16px;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:540px){
+    section .section-1 header .nav .nav-rt .bar{
+        display: block;
+        float: right;
+        margin-left: 25px;
+    }
+    section .section-1 header .nav .nav-rt .title{
+        display: none;
+    }
+    
+    section .section-1 header .nav .nav-rt .logo{
+        width:70%;
+    }
+    section .Home .about {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    section .Home .about .logo-rt{
+        width:25%;
+        margin-top: 120px;
+    }
+    section .Home .about .logo-rt img {
+        width:150px;
+    }
+    section .Home .about .about-lt {
+        width: 60%;
+        margin-top:30px;
+    }
+    section .Home .about .about-lt h2 {
+        font-size: 13px;
+    }
+    section .Home .about .about-lt h2::after{
+        width: 50px;
+        left:22%;
+    }
+    section .Home .about .about-lt h1{
+         margin-top: 3px;
+         font-size: 25px;
+    }
+    section .Home .about .about-lt p{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    section .Home .about .about-lt .title{
+        margin-top: 20px;
+    }
+    section .Home .about .about-lt .title label{
+        font-size: 12px;
+    }
+    section .Home .about .about-lt .title ul{
+        margin-top: 15.5px;
+    }
+    section .Home .about .about-lt .title ul li {
+    font-size: 12.5px;
+    }
+    section .end-bar{
+        width: 90%;
+    }
+    section .end-bar .end-1{
+        width:33% ;
+    }
+    section .end-bar .end-1 h1{
+        font-size:25px ;
+    }
+
+    section .end-bar .end-1 p{
+        font-size:14px ;
+        margin-top: 5px;
+    }
+    section .end-bar .end-1 .mail{
+        margin-top: 25px;
+    }
+    section .end-bar .end-1 .mail span{
+        font-weight: bold;
+        font-size: larger;
+    }
+    .end-bar .end-2 {
+        width: 30%;
+        text-align: center;
+    }
+    .end-bar .end-2 h1{
+        color: white;
+        font-size:25px ;
+    }
+     
+    
+    section .end-bar .end-2 .logo {
+        margin-top: 30px;
+    }
+    section .end-bar .end-2 a {
+        text-decoration: none;
+        color: white;
+        margin: 10px 3px;
+        padding-top:8px;
+        font-size: 14px;
+        float: left;
+        width:30px ;
+        height: 20px;
+        
+    }
+    section .end-bar .end-2 a:hover{
+        width:35px ;
+        height: 25px;
+        padding-top:10px;
+    }
+    section .end-bar .end-3{
+        color: white;
+        width: 30%;
+    }
+    section .end-bar .end-3 .amit {
+        display: flex;
+        margin-top: 20px;
+    }
+    section .end-bar .end-3 .amit img {
+        margin-right: 5px;
+        width: 60px;
+    }
+    section .end-bar .end-3 .amit a {
+        text-decoration: none;
+        color: white;
+    }
+    section .end-bar .end-3 .amit p {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    
 
 }
