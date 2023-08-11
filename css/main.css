@@ -413,7 +413,7 @@ section .khome .kphome h5::after{
     background-color:rgba(255,255,255,0.75) ;
     position: absolute;
     top: 50%;
-    left:14%;
+    left:16%;
 }
 section .khome .kphome h1{
     margin: 10px 0px;
